@@ -47,7 +47,7 @@ jobs:
       env:
         NEW_VERSION: ${{ steps.version.output.version }}
       run: |
-        docker push fefochico/docker-graphql:NEW_VERSION
+        docker push fefochico/docker-graphql:$NEW_VERSION
         docker push fefochico/docker-graphql:latest
         
 #    - name: Build the Docker image
